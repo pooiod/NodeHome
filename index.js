@@ -29,5 +29,5 @@ app.post('/redirect', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(\`App is live at http://localhost:${port}\`);
+    console.log(`App is live at http://localhost:${port}`);
 });
