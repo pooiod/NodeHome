@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
                 event.preventDefault();
                 const repoUrl = document.getElementById('repository').value;
                 const repoPath = repoUrl.replace('https://github.com/', '').replace('.git', '');
-                window.location.href = \`https://gitnode.free.nf/\${repoPath}\`;
+                window.parent.location.href = \`https://gitnode.free.nf/\${repoPath}\`;
             });
         </script>
     `);
