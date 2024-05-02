@@ -9,12 +9,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve an HTML form at the root route
 app.get('/', (req, res) => {
-    res.send(`
-        <form action="/redirect" method="post" target="_top">
-            <input type="text" name="repository" placeholder="Enter GitHub repository link" required />
-            <button type="submit">Go</button>
-        </form>
-    `);
+    res.send(`<form action="/redirect" method="post" target="_top">
+    <input type="text" name="repository" placeholder="Enter GitHub repository link" required />
+    <button type="submit">Go</button>
+</form>`);
 });
 
 // Handle form submission and redirect
