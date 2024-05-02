@@ -21,11 +21,11 @@ app.post('/redirect', (req, res) => {
     // Extract the repository path from the URL
     const repoPath = repoUrl.replace('https://github.com/', '');
     // Send back a script to redirect the top window
-    res.send(\`
+    res.send(`
         <script>
             window.top.location.href = "https://gitnode.free.nf/${repoPath}";
         </script>
-    \`);
+    `);
 });
 
 app.listen(port, () => {
