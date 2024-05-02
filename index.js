@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
             button:hover { background-color: #0056b3; }
         </style>
         <form id="repoForm">
-            <input type="text" id="repository" placeholder="Enter GitHub repository link" required />
+            <input type="text" id="repository" autocomplete="off" placeholder="Enter a Node.js GitHub repository link" required />
             <button type="submit">Go</button>
         </form>
         <script>
