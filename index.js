@@ -5,6 +5,13 @@ const port = 3111;
 
 app.get('/', (req, res) => {
     res.send(`
+        <style>
+            body { font-family: Arial, sans-serif; background-color: #f7f7f7; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+            form#repoForm { background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+            input#repository { border: 1px solid #ddd; border-radius: 3px; padding: 10px; width: 300px; margin-right: 10px; }
+            button { background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 3px; cursor: pointer; }
+            button:hover { background-color: #0056b3; }
+        </style>
         <form id="repoForm">
             <input type="text" id="repository" placeholder="Enter GitHub repository link" required />
             <button type="submit">Go</button>
