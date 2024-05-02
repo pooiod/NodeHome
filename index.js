@@ -3,7 +3,6 @@ import express from 'express';
 const app = express();
 const port = 3111;
 
-// Serve an HTML form at the root route with embedded JavaScript for client-side redirect
 app.get('/', (req, res) => {
     res.send(`
         <form id="repoForm">
@@ -22,5 +21,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(\`App is live at http://localhost:\${port}\`);
+    console.log(`App is live at http://localhost:\${port}`);
 });
