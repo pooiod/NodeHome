@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
             button { background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 3px; cursor: pointer; }
             button:hover { background-color: #0056b3; }
         </style>
+        <script>window.parent.postMessage({js:"themecolor('#f7f7f7');"}, '*');</script>
         <form id="repoForm">
             <input type="text" id="repository" autocomplete="off" placeholder="Enter a Node.js GitHub repository link" required />
             <button type="submit">Go</button>
